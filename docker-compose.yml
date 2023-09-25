@@ -1,0 +1,14 @@
+version: "3.3"
+
+services:
+  nextjs:
+    ports:
+      - 9000:9000
+    build: .
+    container_name: spa-crm-ui
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+      - /usr/src/app/.next
+    env_file:
+      - .env

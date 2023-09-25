@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Argentum Sans";
+  src: url(../../fonts/Argentum/ArgentumSans-Light.ttf);
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Argentum Sans";
+  src: url(../../fonts/Argentum/ArgentumSans-Medium.ttf);
+  font-weight: 600;
+  font-style: normal;
+}
+
+// @import url("https://fonts.cdnfonts.com/css/argentum-sans");
+
+body {
+  font-family: "Argentum Sans", sans-serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+body {
+  background-color: #eff0f5;
+}
+
+#__next {
+  background-color: #eff0f5;
+}
+
+.slider-class-testimonal {
+  column-gap: 2px;
+}
+
+.dots {
+  border: "1px solid red";
+}
+
+.error {
+  color: #f44336;
+  font-family: Argentum Sans;
+  font-weight: 400;
+  font-size: 0.75rem;
+  margin-top: 3px;
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.loading {
+  opacity: 0;
+  animation-name: fade-in-out;
+  animation-duration: 2s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
